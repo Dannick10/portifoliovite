@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Recursive:wght@300..1000&family=Ruda:wght@400..900&family=Stick+No+Bills:wght@200..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --colorOrange:#E93131;
+  --colorWhite: #D9D9D9;
+  --colorBlack: #000000;
+
+  --fontRecursive: "Recursive", sans-serif;
+  --fontRuda: "Ruda", sans-serif;
+  --fontStick: "Stick No Bills", sans-serif;
+  --fontblinker:  "Blinker", sans-serif;
+}
+
+body{
+  background-color: rgb(20, 20, 20);
+}
+
+p{
+  color: white;
+  font-family: var(--fontblinker);
+  font-size: 1em;
+}
+
+.about{
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+.title{
+  font-family: var(--fontStick);
+  font-size: 1.5em;
+  color: var(--colorOrange);
+
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 15em;
+  text-align: center;
+}

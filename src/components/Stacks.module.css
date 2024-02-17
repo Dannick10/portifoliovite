@@ -1,0 +1,13 @@
+.stacks_flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px   ;
+   
+}
+
+.stacks_flex img{
+    object-fit: contain;
+    width: 4em;
+}

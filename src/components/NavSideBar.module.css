@@ -1,0 +1,21 @@
+.NavSideBar{
+
+    position: fixed;
+    right: 10px;
+    top: 20%;
+}
+
+.Nav_items{
+    list-style: none;
+}
+
+.items{
+    padding: 2px;
+  
+}
+
+.Nav_items span{
+    border: 1px solid white;
+    position: relative;
+    left: 50%;
+}
