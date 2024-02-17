@@ -4,10 +4,11 @@
     align-items: center;
     justify-content: center;
     gap: 30px   ;
-   
+
 }
 
-.stacks_flex img{
+.stacks_flex svg{
     object-fit: contain;
     width: 4em;
+
 }
