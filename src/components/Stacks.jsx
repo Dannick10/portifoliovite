@@ -1,13 +1,6 @@
 //styles
 import styles from './Stacks.module.css'
 
-//imgs
-import CSS from '/CSS.svg'
-import JS from '/JS.svg'
-import TS from '/TS.svg'
-import REACT from '/REACT.svg'
-import GIT from '/GIT.svg'
-
 
 const Stacks = ({html,css,javascript,react,typescript,git,w,color}) =>{
     return(
