@@ -63,10 +63,13 @@ header{
 
 
 @media screen and (max-width: 820px) {
+    header{
+        padding-top: 25%;
+    }
     .header_top{
       display: grid;
       position: relative;
-        gap: 3px;
+         gap: 5px;
     }
 
     .header_top div:first-child{
@@ -89,8 +92,8 @@ header{
     }
 
     .header_top img{
-        width: 10em;
-        height: 10em;   
+        width: 12em;
+        height: 12em;   
         position: relative;
         
     }

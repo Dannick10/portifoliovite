@@ -18,7 +18,9 @@
 
 body{
   background-color: rgb(20, 20, 20);
-}
+  height: 100vh;
+  
+} 
 
 p{
   color: white;
@@ -28,16 +30,17 @@ p{
 
 .about{
   background-color: black;
-
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 1em;
 }
 
 .title{
   font-family: var(--fontStick);
-  font-size: 1.5em;
+  font-size: 2.8em;
   color: var(--colorOrange);
 
 }
@@ -45,7 +48,19 @@ p{
 .info{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 15em;
-  text-align: center;
+  justify-content: space-evenly;
+  height: 40%;
+}
+
+.info div{
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  gap: 2vh;
+  
+}
+
+.info span{
+  color: var(--colorOrange);
+  font-weight: bold;
 }
