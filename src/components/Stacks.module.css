@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 30px   ;
+    gap: 40px;
 
 }
 
@@ -12,3 +12,53 @@
     width: 4em;
 
 }
+
+.stacks_flex div:not(.infoStack){
+  position: relative;
+  display: flex;
+    justify-content: center;
+}
+
+.infoStack{
+    position: absolute;
+    bottom: -30px;
+    color: black;
+    font-family: var(--fontRecursive);
+    font-weight: bold;
+    padding: 2px 15px;
+    text-align: center;
+    background-color: var(--colorOrange);
+    
+}
+
+.infoStack{
+    opacity: 0;
+    transition: 1s;
+    animation: 1s stackclose;
+}
+
+.stacks_flex div:hover .infoStack{
+    opacity: 1;
+    animation: 1s stackshow;
+}
+
+@keyframes stackshow {
+    0%{
+       transform: scale(0%);
+    }
+    100%{
+      
+        transform: scale(100%);
+    }
+}
+
+@keyframes stackclose {
+    0%{
+       transform: scale(100%);
+    }
+    100%{
+      
+        transform: scale(0%);
+    }
+}
+
