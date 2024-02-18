@@ -33,13 +33,15 @@
 
 .infoStack{
     opacity: 0;
-    transition: 1s;
-    animation: 1s stackclose;
+    transition: 0.6s;
+    animation: 0.6s stackclose;
+    z-index: -1;
 }
 
 .stacks_flex div:hover .infoStack{
     opacity: 1;
-    animation: 1s stackshow;
+    animation: 0.6s stackshow;
+    z-index: 1;
 }
 
 @keyframes stackshow {
