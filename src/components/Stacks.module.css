@@ -3,14 +3,14 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-
+  
+   
 }
 
 .stacks_flex svg{
     object-fit: contain;
     width: 4em;
-
+    padding: 10px;
 }
 
 .stacks_flex div:not(.infoStack){
@@ -21,7 +21,7 @@
 
 .infoStack{
     position: absolute;
-    bottom: -30px;
+    bottom: -20px;
     color: black;
     font-family: var(--fontRecursive);
     font-weight: bold;

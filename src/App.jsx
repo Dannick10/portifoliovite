@@ -39,7 +39,12 @@ function App() {
   </section>
 
   <section className="project_container">
-    <Projects/>
+    <div className="project_title">
+        <h2>PROJETOS</h2>
+    </div>
+
+        <Projects/>
+        
   </section>
     </>
   )
