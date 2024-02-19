@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/Header'
 import NavSideBar from './components/NavSidebar'
 import Stacks from './components/Stacks'
+import Projects from './components/Projects'
 
 function App() {
   
@@ -35,6 +36,10 @@ function App() {
         <Stacks html={true} css={true} javascript={true} typescript={true} react={true} git={true} w={70} color='white'/>
 
       </div>
+  </section>
+
+  <section className="project_container">
+    <Projects/>
   </section>
     </>
   )
