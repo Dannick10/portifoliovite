@@ -70,17 +70,22 @@ font-family: var(--fontblinker);
   color: white;
 }
 
-.project_showcase:nth-child(2n+1) button,
-.project_showcase:nth-child(2n+1) a{
+.project_showcase:nth-child(2n+1) button{
   background-color: white;
   color: black;
 }
+
+
 
 .project_showcase:nth-child(2n+1) p{
   color: white;
 }
 
 .project_showcase:nth-child(2n+1) .top_project{
+  flex-direction: row-reverse;
+}
+
+.project_showcase:nth-child(2n+1) .stacks_project{
   flex-direction: row-reverse;
 }
 
@@ -95,5 +100,72 @@ font-family: var(--fontblinker);
 .buttons button{
   color: white;
   background-color: black;
+  cursor: pointer;
 }
 
+
+
+.top_project{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.description_project{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+   width: 35em;
+}
+
+.top_project:nth-child(2n+1){
+  flex-direction: row-reverse;
+}
+
+.description_project h2{
+  font-size: 2em;
+
+}
+
+.description_project p{
+  font-weight: 600;
+ 
+}
+
+.img_project{
+  padding: 20px;
+}
+
+.img_project img{
+width: 100%;
+
+}
+
+.stacks_project{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+
+.stacks_project button{
+  font-family: var(--fontblinker);
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  padding: 15px 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+  min-width: 120px;
+  border: none;
+  
+}
+
+.stacks_project button a{
+ text-decoration: none;
+  color: white;
+}
