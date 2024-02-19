@@ -56,12 +56,17 @@ p{
 background: rgb(236, 236, 236);
 background-size: cover;
 font-family: var(--fontblinker);
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+height: 100vh;
 }
 
 
 .project_showcase p{
   color: black;
   font-family: var(--fontblinker);
+
 }
 
 
