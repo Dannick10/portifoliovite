@@ -43,7 +43,10 @@ function App() {
         <h2>PROJETOS</h2>
     </div>
 
-        <Projects/>
+      <Projects stacks={<Stacks html={true} css={true} javascript={true} color='black'/>}/>
+
+      <Projects stacks={<Stacks html={true} css={true} javascript={true} color='white'/>}/>
+
 
   </section>
     </>

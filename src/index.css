@@ -43,9 +43,6 @@ p{
   font-weight: bold;
 }
 
-.projects_container{
-
-}
 
 .project_title{
   font-family: var(--fontStick);
@@ -54,3 +51,49 @@ p{
   text-align: center;
   padding: 10px;
 }
+
+.project_showcase{
+background: rgb(236, 236, 236);
+background-size: cover;
+font-family: var(--fontblinker);
+}
+
+
+.project_showcase p{
+  color: black;
+  font-family: var(--fontblinker);
+}
+
+
+.project_showcase:nth-child(2n+1){
+  background-color: black;
+  color: white;
+}
+
+.project_showcase:nth-child(2n+1) button,
+.project_showcase:nth-child(2n+1) a{
+  background-color: white;
+  color: black;
+}
+
+.project_showcase:nth-child(2n+1) p{
+  color: white;
+}
+
+.project_showcase:nth-child(2n+1) .top_project{
+  flex-direction: row-reverse;
+}
+
+.top_project{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.buttons button{
+  color: white;
+  background-color: black;
+}
+
