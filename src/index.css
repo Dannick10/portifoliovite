@@ -81,9 +81,11 @@ font-family: var(--fontblinker);
   color: white;
 }
 
+
 .project_showcase:nth-child(2n+1) .top_project{
   flex-direction: row-reverse;
 }
+
 
 .project_showcase:nth-child(2n+1) .stacks_project{
   flex-direction: row-reverse;
@@ -92,10 +94,8 @@ font-family: var(--fontblinker);
 .top_project{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-evenly;
 }
-
 
 .buttons button{
   color: white;
@@ -118,10 +118,6 @@ font-family: var(--fontblinker);
   align-items: center;
   text-align: center;
    width: 35em;
-}
-
-.top_project:nth-child(2n+1){
-  flex-direction: row-reverse;
 }
 
 .description_project h2{

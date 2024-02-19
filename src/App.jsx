@@ -47,6 +47,9 @@ function App() {
 
       <Projects stacks={<Stacks html={true} css={true} javascript={true} color='white'/>}/>
 
+      
+      <Projects stacks={<Stacks html={true} css={true} javascript={true} color='black'/>}/>
+
 
   </section>
     </>
