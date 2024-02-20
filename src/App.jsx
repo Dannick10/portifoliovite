@@ -3,6 +3,7 @@ import './App.css'
 
 //Components
 import Header from './components/Header'
+import Footer from './components/Footer'
 import NavSideBar from './components/NavSidebar'
 import Stacks from './components/Stacks'
 import Projects from './components/Projects'
@@ -58,6 +59,7 @@ function App() {
       stacks={<Stacks html={true} css={true} javascript={true} color='black'/>}
      />
 
+     
       <Projects 
       img={nossosol}
       title='NOSSO SOL'
@@ -71,8 +73,8 @@ function App() {
       img={educamais}
       title='PORTAL EDUCA+'
       info='Um projeto de educação mostrando principais cursos e apresentação da administração da instituição. A página é responsiva e tem uma experiência unica com efeitos de animações  Utilizando Html, Css,JavaScript,Git. Nesse projeto aprendi administrar e organizar meu tempo por ser parte de um desafio, do @FuturoDevJohn.'
-      linksite='https://dannick10.github.io/jadoo_landing/'
-      linkgit='https://github.com/Dannick10/jadoo_landing'
+      linksite='https://dannick10.github.io/educamais/'
+      linkgit='https://github.com/Dannick10/educamais'
       stacks={<Stacks html={true} css={true} javascript={true} color='black'/>}
       />
 
@@ -80,13 +82,17 @@ function App() {
       img={dogapi}
       title='DOG API'
       info='Um projeto sobre raças de cachorros com informações explicativas de cada raças. A página é responsiva e minimalista. Utilizando HTML, CSS,JAVASCRIPT,GIT e a api  thedogapi. Esse projeto foi desafiador por eu ter consumido minha primeira API sozinho, Aprendi o uso do Fetch.'
-      linksite='https://dannick10.github.io/jadoo_landing/'
-      linkgit='https://github.com/Dannick10/jadoo_landing'
+      linksite='https://dannick10.github.io/dog_api/'
+      linkgit='https://github.com/Dannick10/dog_api?tab=readme-ov-file'
       stacks={<Stacks html={true} css={true} javascript={true} color='white'/>}
       />
 
 
   </section>
+
+    <footer>
+      <Footer/>
+    </footer>
     </>
   )
 }
