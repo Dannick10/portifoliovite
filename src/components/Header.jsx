@@ -6,7 +6,7 @@ import me from '/me.gif'
 function Header() {
   return (
     <>
-      <header>
+      <header id='header'>
           <div className={styles.header_top}>
             <div>
               <h1>DANIEL</h1>

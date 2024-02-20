@@ -3,6 +3,7 @@ import './App.css'
 
 //Components
 import Header from './components/Header'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import NavSideBar from './components/NavSidebar'
 import Stacks from './components/Stacks'
@@ -18,10 +19,11 @@ function App() {
   
   return (
     <>
+  <Navbar/>
   <Header/>
   <NavSideBar/>
   
-  <section className='about'>
+  <section className='about' id='about'>
     
     <div className="title">
       <h2>QUEM SOU ?</h2>
@@ -45,7 +47,7 @@ function App() {
       </div>
   </section>
 
-  <section className="project_container">
+  <section className="project_container" id='project'>
     <div className="project_title">
         <h2>PROJETOS</h2>
     </div>
@@ -90,7 +92,7 @@ function App() {
 
   </section>
 
-    <footer>
+    <footer id='contact'>
       <Footer/>
     </footer>
     </>
