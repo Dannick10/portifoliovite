@@ -45,6 +45,8 @@
     opacity: 1;
 }
 
+
+
 .nav{
     z-index: 3;
     position: fixed;
@@ -68,8 +70,7 @@ border-radius: 10px;
 
 }
 
-.menuToggle input
-{
+.menuToggle input{
 display: flex;
 width: 40px;
 height: 20px;
@@ -79,8 +80,7 @@ opacity: 0;
 z-index: 2;
 }
 
-.menuToggle span
-{
+.menuToggle span{
 display: flex;
 width: 29px;
 height: 2px;
@@ -95,35 +95,41 @@ transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
             opacity 0.55s ease;
 }
 
-.menuToggle span:first-child
-{
+.menuToggle span:first-child{
 transform-origin: 0% 0%;
 }
 
-.menuToggle span:nth-last-child(2)
-{
+.menuToggle span:nth-last-child(2){
 transform-origin: 0% 100%;
 }
 
-.menuToggle input:checked ~ span
-{
+.menuToggle input:checked ~ span{
 opacity: 1;
 transform: rotate(45deg) translate(-5px, -1px);
 background: white;
-}
-.menuToggle input:checked ~ span:nth-last-child(3)
-{
-opacity: 0;
-transform: rotate(0deg) scale(0.2, 0.2);
+
 }
 
-.menuToggle input:checked ~ span:nth-last-child(2)
-{
+.menuToggle input:checked ~ span:nth-last-child(3){
+opacity: 0;
+transform: rotate(0deg) scale(0.2, 0.2);
+animation: 2s spanum;
+}
+
+@keyframes spanum {
+0%{ 
+    left: 0%;
+}    
+50%{
+    left: 100em;
+}
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2){
 transform: rotate(-45deg) translate(0, -1px);
 }
 
-.menu
-{
+.menu{
 position: absolute;
 font-size: 1.4em;
 font-family: var(--fontblinker);
@@ -141,12 +147,12 @@ padding: 50px;
 background-color: black;
 -webkit-font-smoothing: antialiased;
 transform-origin: 0% 0%;
-transform: translate(300%, 0%) scaleX(1000);
-transition: transform 1s cubic-bezier(.96,.19,0,.82)
+transform: translate(300%, 0%) scaleX(1000) rotate(-20deg);
+transition: transform 1s cubic-bezier(.96,.19,0,.82);
+
 }
 
-.menu li
-{
+.menu li{
 padding: 5px 0;
 transition-delay: 2s;
 display: flex;
@@ -155,14 +161,18 @@ justify-content: space-between;
 
 .menu a{
     color: rgb(255, 255, 255);
+  
 }
 
-.menuToggle input:checked ~ ul
-{
-
+.menuToggle input:checked ~ ul{
 transform: none;
-
 }
+
+.menuToggle input:checked ~ header{
+
+display: none;
+}
+
 
 @media screen and (max-width: 820px) {
     .desktop_navbar{
