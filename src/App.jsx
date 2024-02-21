@@ -98,13 +98,17 @@ function App() {
 
   <div className="styles">
     <div className="styles_title">
-      <h2>SOBRE O PROJETO</h2>
+      <h2>SOBRE O PORTIFOLIO</h2>
     </div>
+    <div className="tech">
+      <p>Esse portifolio foi feito em React</p>
+      <Stacks react={true} color='white'/>
+    </div>
+    <div className='colors_fonts'>
     <Swiper
          grabCursor={true}
         pagination={true}
         navigation={true}
-        
          className='effctCard'
         >
 
@@ -125,6 +129,7 @@ function App() {
       </SwiperSlide>
 
     </Swiper>
+    </div>
     
   </div>
 

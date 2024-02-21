@@ -173,24 +173,30 @@ width: 100%;
 }
 
 .styles{
-  background-color: var(--colorOrange);
-
+  padding-top: 5em;
+  background-color: black;
+  text-align: center;
 }
 
 .styles_title{
-  font-family: var(--fontblinker);
+  font-family: var(--fontStick);
   color: white;
   text-align: center;
 }
 
 div.swiper-button-prev,
 div.swiper-button-next {
-   color: black;
+   color: var(--colorOrange);
+}
+
+.swiper-pagination{
+  background-color:white; 
+  border-radius: 20px;
 }
 
 .swiper-pagination-bullet-active {
 
-  background-color: #000 !important;
+  background-color: var(--colorOrange) !important;
 }
 
 .effctCard{
