@@ -1,0 +1,46 @@
+.info_design{
+    background-color: var(--colorOrange);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.info_design p,
+.info_design h2{
+    color: black;
+}
+
+.info_design p{
+    font-size: 1.4em;
+}
+
+
+.colors,
+.fonts{
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 30em;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.sub_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.color{
+    width: 100px;
+    height: 100px;
+    background-color: var(--colorOrange);
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.623);
+}
+
