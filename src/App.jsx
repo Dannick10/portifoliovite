@@ -14,6 +14,10 @@ import jadoo from '/Project_img/jadoo_project.svg'
 import nossosol from '/Project_img/nossosol_project.svg'
 import educamais from '/Project_img/portal_educa.svg'
 import dogapi from '/Project_img/dog_api.svg'
+import Info_project from './components/Info_project'
+
+import {Swiper, SwiperSlide} from 'swiper/react'
+
 
 function App() {
   
@@ -92,8 +96,42 @@ function App() {
 
   </section>
 
+  <div className="styles">
+    <div className="styles_title">
+      <h2>SOBRE O PROJETO</h2>
+    </div>
+    <Swiper
+         grabCursor={true}
+        pagination={true}
+        navigation={true}
+        
+         className='effctCard'
+        >
+
+      <SwiperSlide>
+      <Info_project cordiv='#E93131' fontwrite='RECURSIVE' fonte='Recursive'/>
+      </SwiperSlide>
+
+      <SwiperSlide>
+      <Info_project cordiv='#07070D' fontwrite='RUDA' fonte='RUDA'/>
+      </SwiperSlide>
+
+      <SwiperSlide>
+      <Info_project cordiv='#121111' fontwrite='Blinker' fonte='Blinker'/>
+      </SwiperSlide>
+
+      <SwiperSlide>
+      <Info_project cordiv='#D9D9D9' fontwrite='Stick No Bills' fonte='Stick No Bills'/>
+      </SwiperSlide>
+
+    </Swiper>
+    
+  </div>
+
     <footer id='contact'>
+
       <Footer/>
+
     </footer>
     </>
   )

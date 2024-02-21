@@ -172,6 +172,31 @@ width: 100%;
   color: white;
 }
 
+.styles{
+  background-color: var(--colorOrange);
+
+}
+
+.styles_title{
+  font-family: var(--fontblinker);
+  color: white;
+  text-align: center;
+}
+
+div.swiper-button-prev,
+div.swiper-button-next {
+   color: black;
+}
+
+.swiper-pagination-bullet-active {
+
+  background-color: #000 !important;
+}
+
+.effctCard{
+  width: 80%;
+
+}
 
 @media screen and (min-width: 820px){
   p{
@@ -189,5 +214,9 @@ width: 100%;
   .description_project h2{
     font-size: 2.2em;
   }
+
+.effctCard{
+    width: 60%;
+}
 
 }

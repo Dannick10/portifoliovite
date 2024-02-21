@@ -7,7 +7,9 @@
     padding: 2em 0;
     min-height: 50vh;
 }
-
+.effctCard{
+    width: 10em;
+}
 .footer_title h2{
     font-family:var(--fontStick);
     font-size: 2.4em;

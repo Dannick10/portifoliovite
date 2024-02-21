@@ -1,7 +1,7 @@
 import styles from './Info_projects.module.css'
 function Info_project({cordiv,fonte,fontwrite}) {
   return (
-    <div>
+    <>
       <div className={styles.info_design}>
         <div className={styles.colors}>
 
@@ -17,7 +17,7 @@ function Info_project({cordiv,fonte,fontwrite}) {
                 <p style={{fontFamily:`${fonte}`}}>{fontwrite}</p>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
