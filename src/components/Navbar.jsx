@@ -17,6 +17,21 @@ function Navbar() {
 
     </nav>
 
+    <nav className={styles.nav} role="navigation">
+       <div className={styles.menuToggle}>
+        <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+       <ul className={styles.menu}>
+         <li><a href="#header">INICIO</a></li>
+         <li><a href="#about">SOBRE</a></li>
+         <li><a href="#project">PROJETOS</a></li>
+         <li><a href="#contact">CONTATO</a></li>
+      </ul>
+     </div>
+    </nav>
+
     </>
   )
 }

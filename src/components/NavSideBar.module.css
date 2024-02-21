@@ -19,3 +19,8 @@
     position: relative;
     left: 50%;
 }
+
+.items:hover{
+    filter: drop-shadow(2px 2px 3px rgba(255, 255, 255, 0.274));
+   transition: 0.5s;  
+}
