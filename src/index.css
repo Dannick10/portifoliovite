@@ -174,7 +174,7 @@ width: 100%;
 }
 
 .stacks_project button::after{
-  content: '🖱️';
+  content: '☝️';
   width: 0%;
   height: 0%;
   position: absolute;
@@ -261,8 +261,3 @@ div.swiper-button-next {
 
 }
 
-@media screen and (max-width: 820px) {
-  .stacks_project button::after{
-    content: '☝️';
-  }
-}
