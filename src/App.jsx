@@ -45,7 +45,7 @@ function App() {
 
       <div className="div_stacks">
 
-        <Stacks html={true} css={true} javascript={true} typescript={true} react={true} git={true} w={70} color='white'/>
+        <Stacks html={true} css={true} javascript={true} typescript={true} react={true} git={true} firebase={true} w={70} color='white'/>
 
       </div>
   </section>
