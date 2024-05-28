@@ -35,8 +35,8 @@ function App() {
       img: reduxStore,
       title: 'ReduxStore',
       info: 'StoreRedux é uma plataforma de e-commerce desenvolvida para proporcionar uma experiência moderna e acessível na simulação de compras online. Utilizando HTML, CSS, JavaScript, React, Redux e a API do Mercado Livre, o projeto demonstra como gerenciar o estado de uma aplicação complexa. Além disso, ele implementa um sistema com redux para gerenciar o carrinho de compras.',
-      linksite: 'https://caminhodigitaldabiblia.vercel.app/',
-      linkgit: 'https://github.com/Dannick10/CaminhoDigitaldaBiblia',
+      linksite: 'https://storeredux.vercel.app/',
+      linkgit: 'https://github.com/Dannick10/Store',
       stacks: { html: true, css: true, javascript: true, git: true, react: true, redux: true, color: 'white' }
     },
     {
