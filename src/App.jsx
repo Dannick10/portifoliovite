@@ -15,10 +15,7 @@ import Info_project from "./components/Info_project";
 import CaminhoDigital from "/Project_img/CaminhoDigital.png";
 import reduxStore from "/Project_img/reduxStore.png";
 import wikimoeda from "/Project_img/wikimoeda.jpg";
-import mypad from '/Project_img/mypad.jpg'
-
-
-
+import mypad from "/Project_img/mypad.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -31,10 +28,8 @@ function App() {
       linksite: "https://wikimoeda.vercel.app/",
       linkgit: "https://github.com/Dannick10/wikimoeda",
       stacks: {
-        html: true,
         tailwind: true,
         typescript: true,
-        git: true,
         react: true,
         color: "black",
       },
@@ -46,10 +41,7 @@ function App() {
       linksite: "https://caminhodigitaldabiblia.vercel.app/",
       linkgit: "https://github.com/Dannick10/CaminhoDigitaldaBiblia",
       stacks: {
-        html: true,
-        css: true,
         javascript: true,
-        git: true,
         react: true,
         firebase: true,
         color: "white",
@@ -62,10 +54,7 @@ function App() {
       linksite: "https://storeredux.vercel.app/",
       linkgit: "https://github.com/Dannick10/Store",
       stacks: {
-        html: true,
-        css: true,
         javascript: true,
-        git: true,
         react: true,
         redux: true,
         color: "black",
@@ -78,8 +67,7 @@ function App() {
       linksite: "https://storeredux.vercel.app/",
       linkgit: "https://github.com/Dannick10/Store",
       stacks: {
-        html: true,
-        css: true,
+        tailwind: true,
         javascript: true,
         next: true,
         color: "white",
@@ -101,9 +89,8 @@ function App() {
       linkgit: "https://github.com/fabcode01/nosso-sol",
       stacks: {
         react: true,
-        html: true,
-        css: true,
         javascript: true,
+        git: true,
         color: "white",
       },
     },
