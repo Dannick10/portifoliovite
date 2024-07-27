@@ -18,6 +18,7 @@ import wikimoeda from "/Project_img/wikimoeda.jpg";
 import mypad from "/Project_img/mypad.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import Waves from "./components/Animation/waves";
 
 function App() {
   const projects = [
@@ -150,8 +151,9 @@ function App() {
             next={true}
             w={70}
             color="white"
-          />
+            />
         </div>
+            <Waves/>  
       </section>
 
       <section className="project_container" id="project">
@@ -171,7 +173,7 @@ function App() {
           />
         ))}
       </section>
-
+    
       <div className="styles">
         <div className="styles_title">
           <h2>SOBRE O PORTIFOLIO</h2>

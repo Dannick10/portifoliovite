@@ -1,1 +1,23 @@
-.NavSideBar{user-select:none;position:fixed;right:10px;top:20%}.Nav_items{list-style:none}.items{padding:2px;filter:drop-shadow(1px 2px 2px rgba(0, 0, 0, .507))}.Nav_items span{border:1px solid #fff;position:relative;left:50%}.items:hover{filter:drop-shadow(2px 2px 3px rgba(255, 255, 255, .274));transition:.5s}
+.NavSideBar {
+  user-select: none;
+  position: fixed;
+  right: 10px;
+  top: 20%;
+  z-index: 20;
+}
+.Nav_items {
+  list-style: none;
+}
+.items {
+  padding: 2px;
+  filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.507));
+}
+.Nav_items span {
+  border: 1px solid #fff;
+  position: relative;
+  left: 50%;
+}
+.items:hover {
+  filter: drop-shadow(2px 2px 3px rgba(255, 255, 255, 0.274));
+  transition: 0.5s;
+}
