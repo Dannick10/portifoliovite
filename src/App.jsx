@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -10,11 +11,14 @@ import Projects from "./components/Projects";
 import jadoo from "/Project_img/jadoo_project.svg";
 import nossosol from "/Project_img/nossosol_project.svg";
 import educamais from "/Project_img/portal_educa.svg";
-import dogapi from "/Project_img/dog_api.svg";
 import Info_project from "./components/Info_project";
 import CaminhoDigital from "/Project_img/CaminhoDigital.png";
 import reduxStore from "/Project_img/reduxStore.png";
 import wikimoeda from "/Project_img/wikimoeda.jpg";
+import mypad from '/Project_img/mypad.jpg'
+
+
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -68,12 +72,26 @@ function App() {
       },
     },
     {
+      img: mypad,
+      title: "mypadCookie",
+      info: "MyPadCookie é um jogo desenvolvido por mim para treinar habilidades de orientação a objetos. No jogo, você interage com um biscoito para ganhar dinheiro e evoluir seu nível, personalizando seu jogo e gerenciando itens através de um sistema de inventário.",
+      linksite: "https://storeredux.vercel.app/",
+      linkgit: "https://github.com/Dannick10/Store",
+      stacks: {
+        html: true,
+        css: true,
+        javascript: true,
+        next: true,
+        color: "white",
+      },
+    },
+    {
       img: jadoo,
       title: "JADOO LADING PAGE",
       info: "Um portal de viagens que oferece uma experiência única Uma pagina atraente e responsiva. Utilizando Html, Css,JavaScript,Git e duas bibliotecas vanilla-tilt.js e Notyf. Nesse projeto aprendi estruturar um ótimo HTML para conseguir manipular um site com muitos elementos.",
       linksite: "https://dannick10.github.io/jadoo_landing/",
       linkgit: "https://github.com/Dannick10/jadoo_landing",
-      stacks: { html: true, css: true, javascript: true, color: "white" },
+      stacks: { html: true, css: true, javascript: true, color: "black" },
     },
     {
       img: nossosol,
@@ -86,7 +104,7 @@ function App() {
         html: true,
         css: true,
         javascript: true,
-        color: "black",
+        color: "white",
       },
     },
     {
@@ -95,14 +113,6 @@ function App() {
       info: "Um projeto de educação mostrando principais cursos e apresentação da administração da instituição. A página é responsiva e tem uma experiência unica com efeitos de animações Utilizando Html, Css,JavaScript,Git. Nesse projeto aprendi administrar e organizar meu tempo por ser parte de um desafio, do @FuturoDevJohn.",
       linksite: "https://dannick10.github.io/educamais/",
       linkgit: "https://github.com/Dannick10/educamais",
-      stacks: { html: true, css: true, javascript: true, color: "white" },
-    },
-    {
-      img: dogapi,
-      title: "DOG API",
-      info: "Um projeto sobre raças de cachorros com informações explicativas de cada raças. A página é responsiva e minimalista. Utilizando HTML, CSS,JAVASCRIPT,GIT e a api thedogapi. Esse projeto foi desafiador por eu ter consumido minha primeira API sozinho, Aprendi o uso do Fetch.",
-      linksite: "https://dannick10.github.io/dog_api/",
-      linkgit: "https://github.com/Dannick10/dog_api?tab=readme-ov-file",
       stacks: { html: true, css: true, javascript: true, color: "black" },
     },
   ];
@@ -121,21 +131,19 @@ function App() {
         <div className="info">
           <div>
             <p>
-              👨‍💻 Cursando <b>Análise e Desenvolvimento de Sistemas</b> pela{" "}
-              <span>estácio</span>.
-            </p>
-            <p>
-              🖥️ Profissional com experiência em desenvolvimento{" "}
-              <span>Frontend</span>, Com habilidades sólidas em diversas{" "}
-              <b>tecnologias</b> e <b>frameworks</b>, desenvolvimento de
-              interfaces de usuário elegantes e responsivas.
+              Meu nome é Daniel. Atualmente cursando{" "}
+              <span>analise e desenvolvimento de sistemas</span> e me dedicando
+              ao <span>desenvolvimento web</span>, já desenvolvi alguns projetos
+              criativos, projetos em equipe e outros que resolveram problemas de
+              conhecidos. Estou sempre me mantendo atualizado com as novas
+              tendências do mercado.
             </p>
             <p>
               💾 Stacks:{" "}
               <span>
                 HTML, CSS, Tailwindcss, Javascript, TypeScript, React, Redux,
                 Redux tooolkit, Styled Components, Context API, Hooks, Git,
-                Firebase
+                Firebase, Nextjs
               </span>
             </p>
           </div>
@@ -152,6 +160,7 @@ function App() {
             git={true}
             firebase={true}
             redux={true}
+            next={true}
             w={70}
             color="white"
           />
