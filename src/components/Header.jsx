@@ -25,8 +25,6 @@ function Header() {
             <span>DEV.</span> FRONT END
           </h2>
         </div>
-    
-  
       </header>
     </>
   );

@@ -51,7 +51,7 @@
   opacity: 1;
 }
 .nav {
-  z-index: 3;
+  z-index: 40;
   top: 0;
   left: 0;
 }
