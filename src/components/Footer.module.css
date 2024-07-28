@@ -31,6 +31,9 @@
   position: relative;
   padding-right: 5em;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 .redes button {
