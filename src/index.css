@@ -195,6 +195,18 @@ div.swiper-button-next,div.swiper-button-prev {
     width:80%
 }
 
+.footer{
+    position: relative;
+}
+
+.wavesFooter{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    top: -10em;
+    overflow: hidden;
+}
+
 @media screen and (min-width:820px) {
     p {
         color:#fff;

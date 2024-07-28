@@ -221,7 +221,10 @@ function App() {
         </div>
       </div>
 
-      <footer id="contact">
+      <footer className="footer" id="contact">
+        <div className="wavesFooter">
+        <Waves/>
+        </div>
         <Footer />
       </footer>
     </>

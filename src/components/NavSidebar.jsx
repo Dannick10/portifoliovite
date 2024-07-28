@@ -33,14 +33,6 @@ const NavSideBar = () => {
               <img src={email} alt="acesso ao email" />
             </a>
           </li>
-          <li>
-            <span></span>
-          </li>
-          <li className={styles.items}>
-            <a href="https://wa.me/5579998045731" target="_blank">
-              <img src={phone} alt="acesso ao celular" />
-            </a>
-          </li>
         </ul>
       </nav>
     </>

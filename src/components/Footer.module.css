@@ -1,1 +1,128 @@
-.footer_container{background-color:var(--colorOrange);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:2em 0;min-height:50vh}.effctCard{width:10em}.footer_title h2{font-family:var(--fontStick);font-size:2.2em;color:#fff}.redes ul{font-family:var(--fontRecursive);display:flex;flex-direction:column;justify-content:space-around}.redes li{padding:20px}@media screen and (min-width:820px){.redes ul{flex-direction:row}}
+.footer_container {
+  background-color: var(--colorOrange);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em 0;
+  min-height: 20vh;
+  gap: 1em;
+  width: 100%;
+}
+.effctCard {
+  width: 10em;
+}
+.footer_title h2 {
+  font-family: var(--fontStick);
+  font-size: 2.2em;
+  color: #fff;
+}
+.redes ul {
+  font-family: var(--fontRecursive);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1em;
+}
+.redes li {
+  padding: 10px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 20px;
+  position: relative;
+  padding-right: 5em;
+  overflow: hidden;
+}
+
+.redes button {
+  position: absolute;
+  border: none;
+  height: 100%;
+  width: 4em;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 1em;
+  color: #e93131;
+  font-family: var(--fontRecursive);
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.redes li:hover {
+  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.475);
+}
+
+.redes li:hover button {
+  width: 100%;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+}
+
+.redes li:hover button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 49, 49);
+  transition: 1s;
+  animation: wave 1.4s cubic-bezier(0.25, 0.46, 0.55, 0.94) alternate forwards;
+}
+
+.redes li:hover button::before {
+  content: "Copiar";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  color: white;
+  z-index: 20;
+  animation: waveText 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) alternate infinite;
+}
+
+@keyframes wave {
+  0% {
+    height: 0;
+    border-radius: 150% 4660% 0 0;
+  }
+
+  40% {
+    border-radius: 150% 160% 0 0;
+  }
+
+  50% {
+    border-radius: 1300% 1200% 0 0;
+  }
+
+  80% {
+    border-radius: 1200% 1300% 0 0;
+  }
+
+  100% {
+    height: 150%;
+    border-radius: none;
+    color: white;
+  }
+}
+
+@keyframes waveText {
+  0% {
+    rotate: 2deg;
+    transform: perspective(50%);
+  }
+
+  100% {
+    rotate: -2deg;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .redes ul {
+    flex-direction: row;
+  }
+}
