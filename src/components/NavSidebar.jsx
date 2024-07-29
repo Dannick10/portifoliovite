@@ -29,7 +29,7 @@ const NavSideBar = () => {
             <span></span>
           </li>
           <li className={styles.items}>
-            <a href="https://maito:danmaggot2@gmail.com" target="_blank">
+            <a href="https://maito:ykdanieldev@gmail.com" target="_blank">
               <img src={email} alt="acesso ao email" />
             </a>
           </li>

@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <div className={styles.footer_container}>
-      <div className={styles.footer_title}>
+      <div className={styles.footedr_title}>
         <h2>Vamos Navegar juntos?</h2>
       </div>
       <div className={styles.redes}>
