@@ -108,7 +108,8 @@ p {
     padding:20px
 }
 .img_project img {
-    width:28em;
+    width: 100%;
+    max-width: 30em;
     height: 17em;
     object-fit: cover;
     object-position: top center;
