@@ -11,6 +11,7 @@ import Projects from "./components/Projects";
 import Info_project from "./components/Info_project";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Waves from "./components/Animation/waves";
+import { motion } from 'framer-motion'
 
 function App() {
   return (
@@ -20,32 +21,49 @@ function App() {
       <NavSideBar />
 
       <section className="about" id="about">
-        <div className="title">
+        <motion.div className="title"
+         initial={{opacity: 0, y: 80}}
+         transition={{type: "spring", delay: .2, duration: .4}}
+         whileInView={{opacity: 1, y:0}}
+         viewport={{once: true}}
+        >
           <h2>QUEM SOU ?</h2>
-        </div>
+        </motion.div>
 
         <div className="info">
           <div>
-            <p>
+            <motion.p
+             initial={{opacity: 0, x: 80}}
+             transition={{type: "tween", delay: .3, duration: .6}}
+             whileInView={{opacity: 1, x:0}}
+             viewport={{once: true}}
+           
+            >
               Meu nome é Daniel. Atualmente cursando{" "}
               <span>analise e desenvolvimento de sistemas</span> e me dedicando
               ao <span>desenvolvimento web</span>, já desenvolvi alguns projetos
               criativos, projetos em equipe e outros que resolveram problemas de
               conhecidos. Estou sempre me mantendo atualizado com as novas
               tendências do mercado.
-            </p>
-            <p>
+            </motion.p>
+            <motion.p
+             initial={{opacity: 0, x: -80}}
+             transition={{type: "tween", delay: .4, duration: .6}}
+             whileInView={{opacity: 1, x:0}}
+            viewport={{once: true}}
+            >
               💾 Stacks:{" "}
               <span>
                 HTML, CSS, Tailwindcss, Javascript, TypeScript, React, Redux,
                 Redux tooolkit, Styled Components, Context API, Hooks, Git,
                 Firebase, Nextjs
               </span>
-            </p>
+            </motion.p>
           </div>
         </div>
 
-        <div className="div_stacks">
+        <div className="div_stacks"
+        >
           <Stacks
             html={true}
             css={true}
@@ -78,6 +96,7 @@ function App() {
             linksite={project.linksite}
             linkgit={project.linkgit}
             stacks={<Stacks {...project.stacks} />}
+            index={index}
           />
         ))}
       </section>
