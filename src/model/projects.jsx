@@ -1,25 +1,12 @@
-import jadoo from "/Project_img/jadoo_project.svg";
-import nossosol from "/Project_img/nossosol_project.svg";
-import educamais from "/Project_img/portal_educa.svg";
 import CaminhoDigital from "/Project_img/CaminhoDigital.png";
 import reduxStore from "/Project_img/reduxStore.png";
 import wikimoeda from "/Project_img/wikimoeda.jpg";
 import mypad from "/Project_img/mypad.jpg";
+import nebulaclima from "/Project_img/nebulaclima.jpg";
+import repoimage from "/Project_img/repoImage.jpg";
+
 
 const projects = [
-    {
-      img: wikimoeda,
-      title: "Wikimoeda",
-      info: "Wikimoeda é um projeto sobre o mundo financeiro desenvolvido utilizando React, TailwindCSS, TypeScript, animaçoes, api de noticias do ibge, api de cotações e integração com wikipedia. O objetivo é manter os usuários atualizados com as últimas cotações de moedas, notícias financeiras e informações detalhadas sobre diversos investimentos.",
-      linksite: "https://wikimoeda.vercel.app/",
-      linkgit: "https://github.com/Dannick10/wikimoeda",
-      stacks: {
-        tailwind: true,
-        typescript: true,
-        react: true,
-        color: "black",
-      },
-    },
     {
       img: CaminhoDigital,
       title: "Caminho Digital da Biblia",
@@ -30,6 +17,45 @@ const projects = [
         javascript: true,
         react: true,
         firebase: true,
+        color: "black",
+      },   
+    },
+    {
+      img: wikimoeda,
+      title: "Wikimoeda",
+      info: "Wikimoeda é um projeto sobre o mundo financeiro desenvolvido utilizando React, TailwindCSS, TypeScript, animaçoes, api de noticias do ibge, api de cotações e integração com wikipedia. O objetivo é manter os usuários atualizados com as últimas cotações de moedas, notícias financeiras e informações detalhadas sobre diversos investimentos.",
+      linksite: "https://wikimoeda.vercel.app/",
+      linkgit: "https://github.com/Dannick10/wikimoeda",
+      stacks: {
+        tailwind: true,
+        typescript: true,
+        react: true,
+        color: "white",
+      },
+    },
+    {
+      img: nebulaclima,
+      title: "nebulaclima",
+      info: "Nebulaclima é uma aplicação que fornece informações meteorológicas detalhadas para qualquer cidade do Brasil. Desenvolvida com Next.js, TypeScript, DaisyUI e Frame Motion, a aplicação utiliza múltiplas APIs para oferecer uma experiência de usuário fluida, permitindo a seleção de cidades e países, além de suporte para mudança de tema com persistência em LocalStorage.",
+      linksite: "https://mypadcookie.vercel.app/",
+      linkgit: "https://github.com/Dannick10/MypadCookie",
+      stacks: {
+        tailwind: true,
+        typescript: true,
+        next: true,
+        color: "black",
+      },
+    },
+    {
+      img: repoimage,
+      title: "nebulaclima",
+      info: "repoImages é uma aplicação desenvolvida para pesquisar e exibir imagens utilizando a API do Pexels. A aplicação permite visualizar imagens em uma versão expandida com animações suaves e acessar o perfil do usuário que postou a imagem no Pexels. Além disso, a aplicação implementa paginação para facilitar a navegação entre as imagens. O projeto foi desenvolvido com Next.js, TailwindCSS, DaisyUI, TypeScript e Frame Motion.",
+      linksite: "https://mypadcookie.vercel.app/",
+      linkgit: "https://github.com/Dannick10/MypadCookie",
+      stacks: {
+        tailwind: true,
+        typescript: true,
+        next: true,
         color: "white",
       },
     },
@@ -59,35 +85,8 @@ const projects = [
         color: "white",
       },
     },
-    {
-      img: jadoo,
-      title: "JADOO LADING PAGE",
-      info: "Um portal de viagens que oferece uma experiência única Uma pagina atraente e responsiva. Utilizando Html, Css,JavaScript,Git e duas bibliotecas vanilla-tilt.js e Notyf. Nesse projeto aprendi estruturar um ótimo HTML para conseguir manipular um site com muitos elementos.",
-      linksite: "https://dannick10.github.io/jadoo_landing/",
-      linkgit: "https://github.com/Dannick10/jadoo_landing",
-      stacks: { html: true, css: true, javascript: true, color: "black" },
-    },
-    {
-      img: nossosol,
-      title: "NOSSO SOL",
-      info: "Um projeto em equipe de conscientização para destacar a independência energética proporcionada pelos painéis solares. Esse projeto foi feito em colaboração com outro desenvolvedor utilizando o Git,React,vite e biblioteca swipe.",
-      linksite: "https://nosso-sol.vercel.app/",
-      linkgit: "https://github.com/fabcode01/nosso-sol",
-      stacks: {
-        react: true,
-        javascript: true,
-        git: true,
-        color: "white",
-      },
-    },
-    {
-      img: educamais,
-      title: "PORTAL EDUCA+",
-      info: "Um projeto de educação mostrando principais cursos e apresentação da administração da instituição. A página é responsiva e tem uma experiência unica com efeitos de animações Utilizando Html, Css,JavaScript,Git. Nesse projeto aprendi administrar e organizar meu tempo por ser parte de um desafio, do @FuturoDevJohn.",
-      linksite: "https://dannick10.github.io/educamais/",
-      linkgit: "https://github.com/Dannick10/educamais",
-      stacks: { html: true, css: true, javascript: true, color: "black" },
-    },
+
+ 
   ];
 
   export default projects
