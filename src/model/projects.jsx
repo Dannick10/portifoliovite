@@ -37,8 +37,8 @@ const projects = [
       img: nebulaclima,
       title: "nebulaclima",
       info: "Nebulaclima é uma aplicação que fornece informações meteorológicas detalhadas para qualquer cidade do Brasil. Desenvolvida com Next.js, TypeScript, DaisyUI e Frame Motion, a aplicação utiliza múltiplas APIs para oferecer uma experiência de usuário fluida, permitindo a seleção de cidades e países, além de suporte para mudança de tema com persistência em LocalStorage.",
-      linksite: "https://mypadcookie.vercel.app/",
-      linkgit: "https://github.com/Dannick10/MypadCookie",
+      linksite: "https://nebulaclima.vercel.app/",
+      linkgit: "https://github.com/Dannick10/Nebulaclima",
       stacks: {
         tailwind: true,
         typescript: true,
@@ -50,8 +50,8 @@ const projects = [
       img: repoimage,
       title: "nebulaclima",
       info: "repoImages é uma aplicação desenvolvida para pesquisar e exibir imagens utilizando a API do Pexels. A aplicação permite visualizar imagens em uma versão expandida com animações suaves e acessar o perfil do usuário que postou a imagem no Pexels. Além disso, a aplicação implementa paginação para facilitar a navegação entre as imagens. O projeto foi desenvolvido com Next.js, TailwindCSS, DaisyUI, TypeScript e Frame Motion.",
-      linksite: "https://mypadcookie.vercel.app/",
-      linkgit: "https://github.com/Dannick10/MypadCookie",
+      linksite: "https://repo-images.vercel.app/",
+      linkgit: "https://github.com/Dannick10/repoImages",
       stacks: {
         tailwind: true,
         typescript: true,
