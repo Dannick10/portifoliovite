@@ -48,7 +48,7 @@ const projects = [
     },
     {
       img: repoimage,
-      title: "nebulaclima",
+      title: "repo-images",
       info: "repoImages é uma aplicação desenvolvida para pesquisar e exibir imagens utilizando a API do Pexels. A aplicação permite visualizar imagens em uma versão expandida com animações suaves e acessar o perfil do usuário que postou a imagem no Pexels. Além disso, a aplicação implementa paginação para facilitar a navegação entre as imagens. O projeto foi desenvolvido com Next.js, TailwindCSS, DaisyUI, TypeScript e Frame Motion.",
       linksite: "https://repo-images.vercel.app/",
       linkgit: "https://github.com/Dannick10/repoImages",
