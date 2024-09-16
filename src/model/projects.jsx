@@ -23,13 +23,14 @@ const projects = [
     {
       img: wikimoeda,
       title: "Wikimoeda",
-      info: "Wikimoeda é um projeto sobre o mundo financeiro desenvolvido utilizando React, TailwindCSS, TypeScript, animaçoes, api de noticias do ibge, api de cotações e integração com wikipedia. O objetivo é manter os usuários atualizados com as últimas cotações de moedas, notícias financeiras e informações detalhadas sobre diversos investimentos.",
+      info: "Wikimoeda é um projeto sobre o mundo financeiro desenvolvido utilizando React, TailwindCSS, TypeScript, animaçoes, api de noticias do ibge, api de cotações e integração com wikipedia e testes unitários com cypress. O objetivo é manter os usuários atualizados com as últimas cotações de moedas, notícias financeiras e informações detalhadas sobre diversos investimentos.",
       linksite: "https://wikimoeda.vercel.app/",
       linkgit: "https://github.com/Dannick10/wikimoeda",
       stacks: {
         tailwind: true,
         typescript: true,
         react: true,
+        cypress: true,
         color: "white",
       },
     },

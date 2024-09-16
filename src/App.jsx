@@ -39,12 +39,8 @@ function App() {
              viewport={{once: true}}
            
             >
-              Meu nome é Daniel. Atualmente cursando{" "}
-              <span>analise e desenvolvimento de sistemas</span> e me dedicando
-              ao <span>desenvolvimento web</span>, já desenvolvi alguns projetos
-              criativos, projetos em equipe e outros que resolveram problemas de
-              conhecidos. Estou sempre me mantendo atualizado com as novas
-              tendências do mercado.
+            Sou desenvolvedor frontend com experiência em <span>JavaScript</span>, <span>Typescript</span>, <span>React</span> e <span>Nextjs</span>. Eu comecei minha jornada com <span>desenvolvimento de software</span> em agosto de 2023 e com os conhecimentos adquiridos pude construir uma plataforma para resolver um problema de acessibilidade de uma comunidade. Atualmente estudando cypress e boas práticas. Também tenho interesse em segurança, desenvolvimento backend e desenvolvimento de jogos.
+
             </motion.p>
             <motion.p
              initial={{opacity: 0, x: -80}}
@@ -56,7 +52,7 @@ function App() {
               <span>
                 HTML, CSS, Tailwindcss, Javascript, TypeScript, React, Redux,
                 Redux tooolkit, Styled Components, Context API, Hooks, Git,
-                Firebase, Nextjs
+                Firebase, Nextjs, Cypress
               </span>
             </motion.p>
           </div>
@@ -75,6 +71,7 @@ function App() {
             firebase={true}
             redux={true}
             next={true}
+            cypress={true}
             w={70}
             color="white"
           />
