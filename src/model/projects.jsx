@@ -4,9 +4,29 @@ import wikimoeda from "/Project_img/wikimoeda.jpg";
 import mypad from "/Project_img/mypad.jpg";
 import nebulaclima from "/Project_img/nebulaclima.jpg";
 import repoimage from "/Project_img/repoImage.jpg";
-
+import yokominiurl from "/Project_img/ykminiurl.jpg"
 
 const projects = [
+    {
+      img: yokominiurl,
+      title: "YKMiniURL",
+      info: `YKMiniURL é uma solução eficiente e gratuita para gerenciar e compartilhar links. Desenvolvido com tecnologias modernas, nosso serviço oferece
+      Encurtamento de Links Longos: Torne seus links curtos e fáceis de compartilhar.
+      Proteção com Senha: Adicione uma camada extra de segurança aos seus links.
+      Estatísticas Detalhadas: Visualize dados sobre cliques, data de criação e desempenho dos seus links.
+      Redirecionamento Simples: Acesse o link original com apenas um clique.`,
+      linksite: "https://ykminiurl.vercel.app/",
+      linkgit: "https://github.com/Dannick10/frontend-ykminiurl",
+      stacks: {
+        next: true,
+        typescript: true,
+        tailwind: true,
+        nodejs: true,
+        express: true,
+        mongodb: true,
+        color: "black",
+      },   
+    },
     {
       img: CaminhoDigital,
       title: "Caminho Digital da Biblia",

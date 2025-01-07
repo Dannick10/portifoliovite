@@ -1,56 +1,98 @@
 .stacks_flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  user-select: none;
-  padding: 1em;
-  z-index: 10;
-}
-.stacks_flex svg {
-  object-fit: contain;
-  width: 4em;
-  padding: 30px 10px;
-  z-index: 10;
-}
-.stacks_flex div:not(.infoStack) {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  user-select: none;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
   z-index: 10;
+  gap: 20px;
+  max-width: 100%; 
+  justify-content: center;
 }
+
+.stacks_flex .icon {
+  font-size: 50px;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+}
+
+.stacks_flex .icon:hover {
+  scale: 1.2;
+}
+
+.stacks_flex div {
+  width: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+
+.stacks_flex div:hover .icon {
+  transform: scale(1.1);
+}
+
 .infoStack {
   position: absolute;
-  bottom: -10px;
+  bottom: -30px;
   color: #fff;
   font-family: var(--fontRecursive);
   font-weight: 700;
-  padding: 2px 15px;
+  padding: 4px 10px;
   text-align: center;
   background-color: var(--colorOrange);
   opacity: 0;
-  transition: 0.6s;
-  animation: 0.6s stackclose;
-  z-index: -1;
-  z-index: 10;
-}
-.stacks_flex div:hover .infoStack {
-  opacity: 1;
-  animation: 0.6s stackshow;
+  transform: scale(0);
+  transition: opacity 0.6s, transform 0.6s;
   z-index: 1;
 }
-@keyframes stackshow {
-  0% {
-    transform: scale(0);
+
+.stacks_flex div:hover .infoStack {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@media (max-width: 768px) {
+  .stacks_flex {
+    gap: 15px;
+    padding: 15px;
   }
-  100% {
-    transform: scale(100%);
+
+  .stacks_flex .icon {
+    font-size: 40px; 
+  }
+
+  .stacks_flex div {
+    width: 70px;
+  }
+
+  .infoStack {
+    font-size: 12px; 
+    padding: 2px 8px;
   }
 }
-@keyframes stackclose {
-  0% {
-    transform: scale(100%);
+
+@media (max-width: 480px) {
+  .stacks_flex {
+    gap: 10px;
+    padding: 10px;
   }
-  100% {
-    transform: scale(0);
+
+  .stacks_flex .icon {
+    font-size: 35px;
+  }
+
+  .stacks_flex div {
+    width: 60px; 
+  }
+
+  .infoStack {
+    font-size: 10px; 
+    padding: 2px 6px;
   }
 }

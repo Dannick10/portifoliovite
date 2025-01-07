@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import projects from "../src/model/projects";
-
+import { MagneticButton } from "./util/MagneticButtons";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -11,9 +11,12 @@ import Projects from "./components/Projects";
 import Info_project from "./components/Info_project";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Waves from "./components/Animation/waves";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 function App() {
+
+  MagneticButton()
+
   return (
     <>
       <Navbar />
@@ -21,11 +24,12 @@ function App() {
       <NavSideBar />
 
       <section className="about" id="about">
-        <motion.div className="title"
-         initial={{opacity: 0, y: 80}}
-         transition={{type: "spring", delay: .2, duration: .4}}
-         whileInView={{opacity: 1, y:0}}
-         viewport={{once: true}}
+        <motion.div
+          className="title"
+          initial={{ opacity: 0, y: 80 }}
+          transition={{ type: "spring", delay: 0.2, duration: 0.4 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
         >
           <h2>QUEM SOU ?</h2>
         </motion.div>
@@ -33,33 +37,40 @@ function App() {
         <div className="info">
           <div>
             <motion.p
-             initial={{opacity: 0, x: 80}}
-             transition={{type: "tween", delay: .3, duration: .6}}
-             whileInView={{opacity: 1, x:0}}
-             viewport={{once: true}}
-           
+              initial={{ opacity: 0, x: 80 }}
+              transition={{ type: "tween", delay: 0.3, duration: 0.6 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
             >
-            Sou desenvolvedor frontend com experiência em <span>JavaScript</span>, <span>Typescript</span>, <span>React</span> e <span>Nextjs</span>. Eu comecei minha jornada com <span>desenvolvimento de software</span> em agosto de 2023 e com os conhecimentos adquiridos pude construir uma plataforma para resolver um problema de acessibilidade de uma comunidade. Atualmente estudando cypress e boas práticas. Também tenho interesse em segurança, desenvolvimento backend e desenvolvimento de jogos.
-
+              <p>
+                desenvolvedor Fullstack, especializado em{" "}
+                <span>JavaScript</span>, <span>TypeScript</span>,{" "}
+                <span>React</span> e <span>Next.js</span>. Atualmente estou com
+                foco em backend Node.js, Express e MongoDB. Colaborei com a Fd
+                Academy no desenvolvimento de interfaces e componentes
+                reutilizáveis, integrando frontend e backend de forma eficiente.
+                Trabalhei com Nextjs, Typescript, Chakra UI, Redux, Git, Figma e
+                metodologias ágeis.
+              </p>
+         
             </motion.p>
             <motion.p
-             initial={{opacity: 0, x: -80}}
-             transition={{type: "tween", delay: .4, duration: .6}}
-             whileInView={{opacity: 1, x:0}}
-            viewport={{once: true}}
+              initial={{ opacity: 0, x: -80 }}
+              transition={{ type: "tween", delay: 0.4, duration: 0.6 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
             >
               💾 Stacks:{" "}
               <span>
                 HTML, CSS, Tailwindcss, Javascript, TypeScript, React, Redux,
-                Redux tooolkit, Styled Components, Context API, Hooks, Git,
-                Firebase, Nextjs, Cypress
+                Redux tooolkit Git, Firebase, Nextjs, Cypress, NodeJs,Express,
+                MongoDB, Vuejs
               </span>
             </motion.p>
           </div>
         </div>
 
-        <div className="div_stacks"
-        >
+        <div className="div_stacks">
           <Stacks
             html={true}
             css={true}
@@ -72,6 +83,11 @@ function App() {
             redux={true}
             next={true}
             cypress={true}
+            nodejs={true}
+            express={true}
+            mongodb={true}
+            mysql={true}
+            vuejs={true}
             w={70}
             color="white"
           />
@@ -104,8 +120,9 @@ function App() {
         </div>
         <div className="tech">
           <p>Esse portifolio foi feito em React</p>
-
+            <div style={{color: "white"}}>
           <Stacks react={true} color="white" />
+            </div>
         </div>
         <div className="colors_fonts">
           <Swiper
