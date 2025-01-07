@@ -183,6 +183,7 @@ p {
     align-items: center;
 }
 .styles {
+    min-height: 500px;
     padding:3em 0;
     background-color:#000;
     text-align:center
