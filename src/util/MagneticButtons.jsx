@@ -13,11 +13,11 @@ export const MagneticButton = () => {
         const deltaX = event.clientX - centerX;
         const deltaY = event.clientY - centerY;
         const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
-        const strength = 10;
+        const strength = 15;
 
         const moveX = (deltaX / distance) * strength;
         const moveY = (deltaY / distance) * strength;
-        if (distance < 50) {
+        if (distance < 60) {
           element.style.transform = `translate(${moveX}px, ${moveY}px)`;
         } else {
           element.style.transform = `translate(${0}px, ${0}px)`;

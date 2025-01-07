@@ -12,6 +12,7 @@ import Info_project from "./components/Info_project";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Waves from "./components/Animation/waves";
 import { motion } from "framer-motion";
+import ExperiencesTimeline from "./components/ExperiencesTimeline";
 
 function App() {
 
@@ -71,6 +72,7 @@ function App() {
         </div>
 
         <div className="div_stacks">
+          <div className="carrousel">
           <Stacks
             html={true}
             css={true}
@@ -90,9 +92,18 @@ function App() {
             vuejs={true}
             w={70}
             color="white"
-          />
+            />
+        </div>
         </div>
         <Waves />
+      </section>
+
+      <section className="project_container" id="project">
+        <div className="project_title">
+          <h2>EXPERIÊNCIAS</h2>
+        </div>
+
+        <ExperiencesTimeline />
       </section>
 
       <section className="project_container" id="project">
