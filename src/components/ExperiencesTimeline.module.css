@@ -29,7 +29,6 @@
     height: 100%;
     width: 2px;
     background: linear-gradient(to bottom, hsl(209, 56%, 53%) 50%, rgb(255, 66, 208), rgb(197, 40, 40)80%);
-    background-attachment: fixed;
   }
   
   .experience {
