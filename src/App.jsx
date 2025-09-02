@@ -15,8 +15,7 @@ import { motion } from "framer-motion";
 import ExperiencesTimeline from "./components/ExperiencesTimeline";
 
 function App() {
-
-  MagneticButton()
+  MagneticButton();
 
   return (
     <>
@@ -44,16 +43,15 @@ function App() {
               viewport={{ once: true }}
             >
               <p>
-                desenvolvedor Fullstack, especializado em{" "}
-                <span>JavaScript</span>, <span>TypeScript</span>,{" "}
-                <span>React</span> e <span>Next.js</span>. Atualmente estou com
-                foco em backend Node.js, Express e MongoDB. Colaborei com a Fd
-                Academy no desenvolvimento de interfaces e componentes
-                reutilizáveis, integrando frontend e backend de forma eficiente.
-                Trabalhei com Nextjs, Typescript, Chakra UI, Redux, Git, Figma e
-                metodologias ágeis.
+                Sou desenvolvedor Fullstack com foco em frontend, unindo 
+                <span> criatividade</span> e <span>código</span> para criar
+                interfaces intuitivas, escaláveis e visualmente sofisticadas.
+                Trabalho com React, Next.js, TypeScript e TailwindCSS,
+                integrando APIs, gerenciando estados e aplicando boas práticas
+                de performance, SEO e acessibilidade. No backend, atuo com
+                Node.js e MongoDB, e estou expandindo minhas habilidades em C# e
+                desenvolvimento de jogos.
               </p>
-         
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -80 }}
@@ -61,39 +59,39 @@ function App() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              💾 Stacks:{" "}
-              <span>
-                HTML, CSS, Tailwindcss, Javascript, TypeScript, React, Redux,
-                Redux tooolkit Git, Firebase, Nextjs, Cypress, NodeJs,Express,
-                MongoDB, Vuejs
-              </span>
+              Reconhecido por propor soluções <span>criativas</span> e <span>funcionais</span>, busco
+              sempre aprender, evoluir e entregar produtos que façam diferença.
             </motion.p>
           </div>
         </div>
 
         <div className="div_stacks">
           <div className="carrousel">
-          <Stacks
-            html={true}
-            css={true}
-            tailwind={true}
-            javascript={true}
-            typescript={true}
-            react={true}
-            git={true}
-            firebase={true}
-            redux={true}
-            next={true}
-            cypress={true}
-            nodejs={true}
-            express={true}
-            mongodb={true}
-            mysql={true}
-            vuejs={true}
-            w={70}
-            color="white"
+            <Stacks
+              html={true}
+              css={true}
+              tailwind={true}
+              javascript={true}
+              typescript={true}
+              react={true}
+              git={true}
+              firebase={true}
+              redux={true}
+              next={true}
+              cypress={true}
+              jest={true}
+              nodejs={true}
+              express={true}
+              mongodb={true}
+              mysql={true}
+              jwt={true}
+              query={true}
+              zod={true}
+              vuejs={true}
+              w={70}
+              color="white"
             />
-        </div>
+          </div>
         </div>
         <Waves />
       </section>
@@ -131,9 +129,9 @@ function App() {
         </div>
         <div className="tech">
           <p>Esse portifolio foi feito em React</p>
-            <div style={{color: "white"}}>
-          <Stacks react={true} color="white" />
-            </div>
+          <div style={{ color: "white" }}>
+            <Stacks react={true} color="white" />
+          </div>
         </div>
         <div className="colors_fonts">
           <Swiper
